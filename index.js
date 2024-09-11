@@ -20,7 +20,7 @@ app.get("/", async (req, res) => {
     res.render("books", { books: response.data });
   } catch (err) {
     console.error(err);
-    res.status(500).send("Error");
+    res.status(500).send("Error Show");
   }
 });
 
@@ -45,7 +45,7 @@ app.post("/create", async (req, res) => {
     res.redirect("/");
   } catch (err) {
     console.error(err);
-    res.status(500).send("Error");
+    res.status(500).send("Error create");
   }
 });
 
@@ -76,7 +76,7 @@ app.get("/delete/:id", async (req, res) => {
     res.redirect("/");
   } catch (err) {
     console.error(err);
-    res.status(500).send("Error");
+    res.status(500).send("Error delete");
   }
 });
 
