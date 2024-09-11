@@ -4,7 +4,8 @@ var bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
 
-const base_url = "http://localhost:3000";
+// const base_url = "http://localhost:3000";
+const base_url = 'https://node65830-chip-app.proen.app.ruk-com.cloud/'
 
 app.set("views", path.join(__dirname, "/public/views"));
 app.set("view engine", "ejs");
